@@ -1,0 +1,24 @@
+SSP - A SIMPLE SQL PARSER in Ruby
+----------------------------------
+
+DESCRIPTION
+SSP is a multipurpose SQL Parser written in Ruby using TreeTop.
+
+The SQL parser is created from a LALR Context-Free Grammar, 
+this grammar implementation is based on SQL-2003 (ISO/IEC 9075-2:2003)
+
+ORGANIZATION
+The grammar in SSP is organized as a hierarchy of productions,
+and these are grouped by functional areas in SQL.
+This grammar organization allows to manage partial reuse and
+partial regeneration of SSP's parser to fit a given purpose within 
+a given subset of SQL's grammar.
+
+SSP PARSER GENERATION
+The parser for SSP is generated using TreeTop PEG, this allows adding inline Ruby code as part
+of the grammar definition to fit specific purposes.
+Existing ruby code can be integrated by simply adding the needed method calls to your code
+from the SSP (simplesqlparser.rb)
+
+
+Copyright (c) 2009 SOREVIT, released under the MIT license
