@@ -1,6 +1,10 @@
-ToDo Project List 
--------------------
+SSP - A SIMPLE SQL PARSER in Ruby
+----------------------------------
+
+TODO List 
+
 
 Create a Treetop grammar for BNFs 
 Create Basic DDL grammar to support schema importing
 Create Basic DML grammar to support handling data
+
